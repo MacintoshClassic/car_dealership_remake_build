@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Showing order information</title>
+</head>
+
+<body>
+    <div>
+        {% for car in car_list %}
+        <b>{{car.brand}}</b>
+        <b>{{car.model}}</b> <br />
+        Year: {{car.year}} <br />
+        HP: {{car.hp}} <br />
+        Color: {{car.color}} <br />
+        Price: ${{car.price}} <br />
+        <hr />
+        {% endfor %}
+        <a class="btn btn-primary" href="http://127.0.0.1:8000/">Home</a>
+    </div>
+</body>
+
+</html>

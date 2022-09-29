@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buy car</title>
+</head>
+
+{% block title %} Car purchasing {% endblock %}
+
+{% block content %}
+<form method="get" action="/buy_car_adding_to_db">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br><input type="submit" class="btn btn-primary" value="Buy this car"><br>
+    <br><a class="btn btn-primary" href="http://127.0.0.1:8000/">Home</a><br>
+</form>
+{% endblock %}
+<html></html>

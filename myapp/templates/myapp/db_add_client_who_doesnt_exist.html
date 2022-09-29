@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add the client</title>
+</head>
+
+</head>
+{% block title %} <b>Add the client</b> {% endblock %}
+
+{% block content %}
+<form method="get" action="client_added_approved">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br><input type="submit" class="btn btn-primary" value="Add"><br>
+    <br><a class="btn btn-primary" href="/order_information">Back</a><br>
+    <br><a class="btn btn-primary" href="http://127.0.0.1:8000/">Home</a><br>
+</form>
+{% endblock %}
+
+</html>

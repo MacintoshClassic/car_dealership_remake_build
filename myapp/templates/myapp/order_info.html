@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order information</title>
+</head>
+
+{% block title %} Order information {% endblock %}
+
+{% block content %}
+<form method="get" action="order_information_printing_out">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br><input type="submit" class="btn btn-primary" value="Show info"><br>
+    <br><a class="btn btn-primary" href="http://127.0.0.1:8000/">Home</a><br>
+</form>
+{% endblock %}
+</html>
